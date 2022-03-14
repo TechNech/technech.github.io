@@ -24,8 +24,8 @@ I have fixed the width of the container to 350px.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/TechNech/technech.github.io/tree/main/qr-code-component-FM)
-- Live Site URL: [Add live site URL here](https://technech.github.io/qr-code-component-FM/index.html)
+- Solution URL: [SOLUTION URL](https://github.com/TechNech/technech.github.io/tree/main/qr-code-component-FM)
+- Live Site URL: [LIVE SITE URL](https://technech.github.io/qr-code-component-FM/index.html)
 
 ## My process
 
