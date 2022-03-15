@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL:](https://github.com/TechNech/technech.github.io/tree/main/signup-form-component-FM)
-- [Live Site URL: ](https://technech.github.io/tree/main/signup-form-component-FM/index.html)
+- [Live Site URL: ](https://technech.github.io/signup-form-component-FM/index.html)
 
 ## My process
 
