@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL:](https://github.com/TechNech/technech.github.io/tree/main/signup-form-component-FM)
+- [Live Site URL: ](https://technech.github.io/tree/main/signup-form-component-FM)
 
 ## My process
 
