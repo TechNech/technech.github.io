@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ## Colors */
+  /* ### Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  /* ### Neutral */
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+  /* ## Typography */
+  /* ### Body Copy */
+  --font-size: 15px;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: var(--font-size);
+  background-color: var(--Very-light-gray);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+main {
+  display: flex;
+  padding: 5rem;
+}
+
+section {
+  padding: 2rem;
+  opacity: 0.9;
+  color: var(--Transparent-white-paragraphs);
+  box-shadow: 0px 0px 3px 3px #33333342;
+}
+
+section h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--Very-light-gray);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+section p {
+  line-height: 1.75rem;
+}
+
+.section-content {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sedans {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.sedan-icon {
+  background: url(images/icon-sedans.svg);
+  width: 64px;
+  height: 40px;
+}
+
+.sedans button {
+  color: var(--Bright-orange);
+}
+
+.suvs {
+  background-color: var(--Dark-cyan);
+}
+
+.suvs-icon {
+  background: url(images/icon-suvs.svg);
+  width: 64px;
+  height: 40px;
+}
+
+.suvs button {
+  color: var(--Dark-cyan);
+}
+
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.luxury-icon {
+  background: url(images/icon-luxury.svg);
+  width: 64px;
+  height: 40px;
+}
+
+.luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 2rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  color: var(--Very-light-gray);
+  background-color: transparent;
+  outline: 2px solid var(--Very-light-gray);
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem;
+    height: max-content;
+  }
+  main {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
