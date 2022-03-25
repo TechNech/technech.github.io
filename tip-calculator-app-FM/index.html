@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="" />
+    </header>
+    <main>
+      <section class="input">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <img src="images/icon-dollar.svg" alt="" />
+          <input type="number" name="bill" id="bill" />
+        </div>
+
+        <div class="select-tip">
+          <h3>Select Tip %</h3>
+
+          <div class="tips">
+            <div class="tips-enter">
+              <input
+                type="checkbox"
+                name="tip-5"
+                id="tip-5"
+                value="0.05"
+                class="tips"
+              />
+              <label for="tip-5">5%</label>
+            </div>
+            <div class="tips-enter">
+              <input
+                type="checkbox"
+                name="tip-10"
+                id="tip-10"
+                value="0.1"
+                class="tips"
+              />
+              <label for="tip-10">10%</label>
+            </div>
+            <div class="tips-enter">
+              <input
+                type="checkbox"
+                name="tip-15"
+                id="tip-15"
+                value="0.15"
+                class="tips"
+              />
+              <label for="tip-15">15%</label>
+            </div>
+
+            <div class="tips-enter">
+              <input
+                type="checkbox"
+                name="tip-25"
+                id="tip-25"
+                value="0.25"
+                class="tips"
+              />
+              <label for="tip-25">25%</label>
+            </div>
+            <div class="tips-enter">
+              <input
+                type="checkbox"
+                name="tip-50"
+                id="tip-50"
+                value="0.5"
+                class="tips"
+              />
+              <label for="tip-50">50%</label>
+            </div>
+            <div class="tips-enter custom">
+              <input
+                type="number"
+                name="custom-tip"
+                id="custom-tip"
+                class="custom-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="people">
+          <label for="people">Number of People</label>
+          <label for="" class="error">Can't be Zero!</label>
+          <img src="images/icon-person.svg" alt="" />
+          <input type="number" name="people" id="people" />
+        </div>
+      </section>
+
+      <section class="display">
+        <div class="display-wrapper">
+          <div class="tip-amount">
+            <label for="tip-amount"
+              >Tip Amount<br /><small> / person</small></label
+            >
+            <output type="number" name="tip-amount" id="tip-amount" />
+          </div>
+          <div class="per-person">
+            <label for="total-per-person"
+              >Total<br /><small> / person</small></label
+            >
+            <output
+              type="number"
+              name="total-per-person"
+              id="total-per-person"
+            />
+          </div>
+          <div class="btn">
+            <button id="reset-btn">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

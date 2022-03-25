@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ## Colors */
+  /* ### Primary */
+  --Strong-cyan: hsl(172, 67%, 45%);
+  /* ### Neutral */
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ## Typography */
+  /* ### Body Copy */
+  --fs-form-inputs: 24px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--Light-grayish-cyan);
+  padding: 0 12rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--White);
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: var(--fs-form-inputs);
+  font-weight: 700;
+  font-family: "Space Mono";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  text-align: end;
+  background-color: var(--Very-light-grayish-cyan);
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  outline: none;
+  border: none;
+  color: var(--Light-grayish-cyan);
+}
+
+input[type="number"]:focus {
+  outline: 0.25rem solid var(--Strong-cyan);
+  color: var(--Dark-grayish-cyan);
+}
+
+output {
+  text-align: end;
+}
+
+.error {
+  display: none;
+  color: hsl(337, 92%, 49%);
+}
+
+/* input side */
+
+input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+}
+
+.select-tip {
+  display: flex;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+section.input {
+  padding: 1rem 2rem;
+}
+
+.bill {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bill img {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.select-tip .tips {
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+
+.people {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.people img {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+input.custom-tip {
+  width: inherit;
+  height: inherit;
+  border: none;
+  background-color: var(--Light-grayish-cyan);
+  font-family: inherit;
+  color: #333;
+}
+
+input.custom-tip::placeholder {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.tips-enter {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+  margin: 0.4rem;
+  border-radius: 0.5rem;
+  width: 120px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-form-inputs);
+}
+
+.tips-enter:hover {
+  background-color: var(--Strong-cyan);
+  color: #333;
+}
+
+.tips-checked {
+  background-color: var(--Strong-cyan);
+  color: #333;
+}
+
+.custom {
+  background-color: inherit;
+}
+
+/* display side */
+section.display {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+  padding: 1rem;
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+.display-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+  /* margin: 1rem; */
+  padding: 3rem 1rem;
+}
+
+.display .tip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display output {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  color: var(--Strong-cyan);
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+.per-person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  padding: 1rem;
+  font-size: var(--fs-form-inputs);
+  font-family: inherit;
+  border: none;
+  background: inherit;
+  color: var(--Very-dark-cyan);
+}
+
+small {
+  color: var(--Dark-grayish-cyan);
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--Strong-cyan);
+  opacity: 0.3;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
